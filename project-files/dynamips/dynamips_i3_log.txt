@@ -1,0 +1,42 @@
+Apr 17 18:59:36.808 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Apr 17 18:59:36.809 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52437.
+Apr 17 18:59:36.818 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 17 18:59:36.819 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips 
+Apr 17 18:59:36.819 GENERAL: working_dir=/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips
+Apr 17 18:59:36.819 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/a5b50f92-2cbf-4888-9783-f01557ba0e2f 
+Apr 17 18:59:36.819 GENERAL: working_dir=/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/a5b50f92-2cbf-4888-9783-f01557ba0e2f
+Apr 17 18:59:36.820 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Apr 17 18:59:36.820 VM: VM R1 created.
+Apr 17 18:59:36.821 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Apr 17 18:59:36.821 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Apr 17 18:59:36.822 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Apr 17 18:59:36.822 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:36.823 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60bf8d58 
+Apr 17 18:59:36.826 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/j_seb/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 17 18:59:36.826 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.4eb2.0000 
+Apr 17 18:59:36.827 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Apr 17 18:59:36.828 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:36.828 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Apr 17 18:59:37.672 HYPERVISOR: exec_cmd: nio create_udp udp-73858544-65a0-42fc-9989-d0448629ec1e 10010 127.0.0.1 10011 
+Apr 17 18:59:37.920 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-73858544-65a0-42fc-9989-d0448629ec1e 
+Apr 17 18:59:37.923 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:38.041 HYPERVISOR: exec_cmd: nio create_udp udp-2d96a0d0-6f1e-4bbb-bf46-9f930202c7a9 10014 127.0.0.1 10015 
+Apr 17 18:59:38.044 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-2d96a0d0-6f1e-4bbb-bf46-9f930202c7a9 
+Apr 17 18:59:38.045 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:39.060 HYPERVISOR: exec_cmd: nio create_udp udp-8bf0152c-8a7d-4a0e-85b1-fb5f886c6a62 10032 127.0.0.1 10033 
+Apr 17 18:59:39.062 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-8bf0152c-8a7d-4a0e-85b1-fb5f886c6a62 
+Apr 17 18:59:39.063 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:43.885 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 17 18:59:43.886 VM: VM Ghost created.
+Apr 17 18:59:43.887 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/j_seb/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 17 18:59:43.902 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 17 18:59:43.906 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-128.ghost' 
+Apr 17 18:59:43.912 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 18:59:43.928 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Apr 17 18:59:43.930 HYPERVISOR: exec_cmd: vm start R1 
+Apr 17 19:00:16.215 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 17 19:00:16.221 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 17 19:31:06.701 HYPERVISOR: exec_cmd: vm get_status R1 
+Apr 17 19:31:06.705 HYPERVISOR: exec_cmd: vm stop R1 
+Apr 17 19:31:06.839 VM: VM R1 shutdown.
+Apr 17 19:31:06.841 HYPERVISOR: exec_cmd: vm extract_config R1 

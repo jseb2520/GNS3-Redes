@@ -1,0 +1,37 @@
+Apr 17 18:59:36.864 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Apr 17 18:59:36.864 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52440.
+Apr 17 18:59:36.872 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 17 18:59:36.873 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips 
+Apr 17 18:59:36.873 GENERAL: working_dir=/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips
+Apr 17 18:59:36.874 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/9802f802-9e12-4855-be53-f3e882737a99 
+Apr 17 18:59:36.874 GENERAL: working_dir=/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/9802f802-9e12-4855-be53-f3e882737a99
+Apr 17 18:59:36.874 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Apr 17 18:59:36.875 VM: VM R2 created.
+Apr 17 18:59:36.875 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5010 
+Apr 17 18:59:36.875 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Apr 17 18:59:36.876 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Apr 17 18:59:36.877 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 17 18:59:36.877 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60bf8d58 
+Apr 17 18:59:36.879 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/j_seb/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 17 18:59:36.879 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c202.4eb3.0000 
+Apr 17 18:59:36.880 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Apr 17 18:59:38.062 HYPERVISOR: exec_cmd: nio create_udp udp-841cbb2f-757c-4ad2-ba67-d7614d8c4582 10016 127.0.0.1 10017 
+Apr 17 18:59:38.290 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-841cbb2f-757c-4ad2-ba67-d7614d8c4582 
+Apr 17 18:59:38.291 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 17 18:59:38.379 HYPERVISOR: exec_cmd: nio create_udp udp-dc70429d-1993-4f47-b7b9-907f1bf91bfe 10020 127.0.0.1 10021 
+Apr 17 18:59:38.382 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-dc70429d-1993-4f47-b7b9-907f1bf91bfe 
+Apr 17 18:59:38.382 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 17 18:59:43.935 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Apr 17 18:59:43.937 VM: VM Ghost created.
+Apr 17 18:59:43.937 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/j_seb/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 17 18:59:43.938 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 17 18:59:43.939 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/Users/j_seb/Desktop/GNS3 Redes/demo_2019-1/project-files/dynamips/c3725-adventerprisek9-mz124-15.image-128.ghost' 
+Apr 17 18:59:43.941 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 17 18:59:43.942 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Apr 17 18:59:43.943 HYPERVISOR: exec_cmd: vm start R2 
+Apr 17 19:00:16.215 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 17 19:00:16.221 HYPERVISOR: exec_cmd: vm extract_config R2 
+Apr 17 19:31:06.746 HYPERVISOR: exec_cmd: vm get_status R2 
+Apr 17 19:31:06.747 HYPERVISOR: exec_cmd: vm stop R2 
+Apr 17 19:31:06.842 VM: VM R2 shutdown.
+Apr 17 19:31:06.846 HYPERVISOR: exec_cmd: vm extract_config R2 
